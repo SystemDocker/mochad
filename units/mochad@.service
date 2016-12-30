@@ -1,0 +1,9 @@
+[Unit]
+Description=mochad X10 TCP Gateway
+
+[Service]
+# SystemDocker configuration
+Environment='DOCKER_IMAGE=jshridha/mochad'
+
+# Setup the X10 device
+Environment='DOCKER_DEVICE_X10=/dev/bus/usb/%i'
